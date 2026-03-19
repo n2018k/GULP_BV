@@ -1,0 +1,40 @@
+# --- KEYWORDS ---
+opti conp prop
+
+# --- CRYSTAL STRUCTURE ---
+# Li2O has antifluorite (cubic) structure, space group Fm-3m
+# Lattice parameter ~4.61 Angstroms
+cell
+4.61 4.61 4.61 90.0 90.0 90.0
+
+fractional
+# 4 O atoms at fcc positions
+O core 0.0000 0.0000 0.0000
+O core 0.5000 0.5000 0.0000
+O core 0.5000 0.0000 0.5000
+O core 0.0000 0.5000 0.5000
+
+# 8 Li atoms at tetrahedral sites
+Li core 0.2500 0.2500 0.2500
+Li core 0.7500 0.7500 0.7500
+Li core 0.7500 0.2500 0.2500
+Li core 0.2500 0.7500 0.2500
+Li core 0.2500 0.2500 0.7500
+Li core 0.7500 0.7500 0.2500
+Li core 0.7500 0.2500 0.7500
+Li core 0.2500 0.7500 0.7500
+
+# --- SPACE GROUP (optional, but reduces atoms needed) ---
+# space
+# 225
+
+keyword noelectrostatics
+species
+Li core  0.84089642
+ O core -1.68179283
+morse    ener
+Li core  O core  1.213  1.57776  1.940013  0.000000  0.000000 10.000000
+qerfc    ener
+# fractional radius = 0.750000
+Li core Li core  1.965000 10.000000
+O core  O core  1.995000 10.000000
