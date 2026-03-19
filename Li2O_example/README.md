@@ -11,3 +11,9 @@ Step 7: optimize Li2O structure again with GULP using new input
 And compare lattice parameters. 
 
 
+Note: morse_gulp.in is the minimum input file we need to optimize Li2O structure with GULP. I have modified only the 
+potential parameters for Li2O example above keeping everything else same.
+
+Note: we always must use conp tag in input file with GULP for geometry optimization. conv tag in morse_gulp.in file is just for example. conv tag
+does not optimize cell shape, size and volume. 
+
